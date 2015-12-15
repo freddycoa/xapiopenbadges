@@ -1,5 +1,5 @@
 function sendCalc(idCalc, resultCalc, exito) {
-	//document.getElementById('div1').innerHTML="hola mundo";
+	
     var d = new Date();
     doConfig();
 
@@ -68,11 +68,5 @@ function sendCalc(idCalc, resultCalc, exito) {
 
     // Send launched statement
      ADL.XAPIWrapper.sendStatement(stmt);
-
-	// var pag= "http://xapi.sigescar.com.ve/badges/1.json";
-	 
-	 //seleccionarC(pag);
-	 
-    // $("#sent-statements").html('SU DATO HA SIDO REGISTRADO EN LRS SERVER');
 	
 }
