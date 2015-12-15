@@ -1,4 +1,4 @@
-Test Game xAPI
+//**********************  Test Game xAPI  **************************/
 
  
   wbXAPI = (WebView) findViewById(R.id.webView);
