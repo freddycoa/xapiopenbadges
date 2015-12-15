@@ -3,14 +3,14 @@
 // Un pequeño ejemplo de condición de respuestas de un juego de Preguntas y Respuestas en HTML 
  if(a == respuestacorrecta){  // condicional para comprobar la respuesta
 		        
-	var bueno=	document.getElementById('progresobueno').style.width = contAciertos+"%";
+	var bueno= document.getElementById('progresobueno').style.width = contAciertos+"%"; // barra de progreso de respuestas correctas
 		contAciertos = contAciertos + 25;
 			if(contNextQuestion > 4 && contAciertos >= 75){  // Condiciones superadas para emision de badge
 				sendingResults('<div class="alert alert-success">You Win</div>'); // Declarando Ganador
 				sendBadges('The Quiz Game', 'Results', 'Winner'); // Envio de badge al servidor LRS
 			}
 	        } else {
-        	var malo= document.getElementById('progresomalo').style.width = contInciertos+"%";
+        var malo= document.getElementById('progresomalo').style.width = contInciertos+"%"; // barra de progreso de respuestas incorrectas
         		contInciertos = contInciertos + 50;
         		if(contInciertos > 100 ){
         			sendingResults('<div class="alert alert-danger">You Lose</div>'); // Declarando Perdedor
