@@ -1,4 +1,4 @@
-function sendCalc(idCalc, resultCalc, exito) {
+function sendBadge(idCalc, resultCalc, exito) {
 	
     var d = new Date();
     doConfig();
