@@ -23,12 +23,10 @@ function sendBadge(idCalc, resultCalc, exito) {
                 "en-US": idCalc
             },
             "description": {
-
-               // "en-US": "Calculos Matematicos "+exito+" Respuesta: "+ resultCalc
 			   
-			   "en-US": "Math Calcs",
+		"en-US": "Math Calcs",
 			   
-			    "time": {
+	        "time": {
                 "hour": d.getHours(),
                 "minutes": d.getMinutes(),
                 "seconds": d.getSeconds()
@@ -39,7 +37,7 @@ function sendBadge(idCalc, resultCalc, exito) {
                 "potition": 80,
                     },
 				
-				"level": {
+		"level": {
                 "number": 0,
                 "description" : "Maximo Nivel"
                     },
