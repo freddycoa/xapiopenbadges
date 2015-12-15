@@ -7,7 +7,7 @@
 		contAciertos = contAciertos + 25;
 			if(contNextQuestion > 4 && contAciertos >= 75){  // Condiciones superadas para emision de badge
 				sendingResults('<div class="alert alert-success">You Win</div>'); // Declarando Ganador
-				sendBadges('The Quiz Game', 'Results', 'Winner'); // Envio de badge al servidor LRS
+				sendBadge('The Quiz Game', 'Results', 'Winner'); // Envio de badge al servidor LRS
 			}
 	        } else {
         var malo= document.getElementById('progresomalo').style.width = contInciertos+"%"; // barra de progreso de respuestas incorrectas
