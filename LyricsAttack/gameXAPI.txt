@@ -1,3 +1,0 @@
-# xapiopenbadges
-Emision de Badges
-test game xapi
