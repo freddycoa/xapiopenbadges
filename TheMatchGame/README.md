@@ -2,7 +2,7 @@
 Emision de Badges
 
 #Trama del Juego
-Se desarrolló bajo Android, implementando un Webview para ejecutar las funciones remotas Javascript-xAPI, en el caso de este repositorio la funcion de javascript que invoca el xAPI se llama "senbadges". 
+Se desarrolló totalmente bajo Android, implementando un Webview para ejecutar las funciones remotas Javascript-xAPI, en el caso de este repositorio la funcion de javascript que invoca el xAPI se llama "senbadges". 
 
 
 #Sinopsis
