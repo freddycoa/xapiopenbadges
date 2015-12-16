@@ -1,7 +1,7 @@
 # The Quiz Game
 Emision de Badges.
 
-#Introducción
+##Introducción
 Es un juego desarrollado en HTML y Javascript, se basa en preguntas y respuestas, tiene determinado un número de preguntas, para la emision del Badge las respuestas correctas deben representar como minimo el 75%, para eliminar al jugador las respuestas incorrectas deben representar 50% de todas las respuestas.
 
 
