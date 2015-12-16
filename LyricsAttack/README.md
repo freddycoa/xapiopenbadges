@@ -1,6 +1,7 @@
 # Lyrics Puzzle
 Emision de Badges
 
+##Introducción
 Es un juego desarrollado en la plataforma Unity, bajo el lenguaje cSharp, Unity como herramienta de desarrollo cuenta con numero de recursos, ofrece gran soporte referente a código y métodos de programación, he utilizado Unity debido a que es una de las herramientas más utilizadas para la creación de videojuegos, es capaz de soportar diversas plataformas como IOS, Android,Windows Phone, Windows para PC, incluso se puede exportar como página web.
 
 
