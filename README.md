@@ -36,7 +36,9 @@ En este servidor se encuentra alojado:
 ###SERVIDOR LRS
 Para la implementación de este servidor se utilizó el servidor ADL-LRS, el cual se encuentra bajo licencia Software Libre, este servidor ha sido desarrollado por Advanced Distributed Learning, Organización encargada de la estandarización de xAPI, para su ejecución es necesario ejecutarlo bajo Ubuntu 12.10, es posible también con Ubuntu 13.10 pero no garantiza su completa funcionabilidad. Esta desarrollado en Python.
 
-Este servidor fue instalado en una máquina virtual VMware Workstation cuenta con un sistema operativo Ubuntu 12.10.
+Este servidor fue instalado en una máquina virtual Amazon AWS, y cuenta con un sistema operativo Ubuntu 12.10.
+
+**URL del Servidor: http://52.88.101.103:8000/xAPI/**
 
 En este servidor se encuentra alojado:
 * Los archivos y base de datos (PosgreSQL) de la ADL-LRS.
