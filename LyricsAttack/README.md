@@ -19,5 +19,5 @@ Para la comunicación desde c# en Unity, se establece a traves de la clase **WWW
 ###Instalación y Ejecución del Servidor servernodejs:
 * Instalar nodejs en el Servidor del Juego
 * Descargar la carpeta del servidor servernodejs
-* Abrir la terminal Windows, Mac o Linux (Recomiendo), ubicamos en la carpeta **cd path/servernodejs/**, una vez ubicado en la carpeta ejecutamos el 2do comando ** node app.js ** podrán apreciar en la terminal un mensaje "Servidor en Ejecucion".
+* Abrir la terminal Windows, Mac o Linux (Recomiendo), ubicamos en la carpeta **cd path/servernodejs/**, una vez ubicado en la carpeta ejecutamos el 2do comando **node app.js** podrán apreciar en la terminal un mensaje "Servidor en Ejecucion".
 
