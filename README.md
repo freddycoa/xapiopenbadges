@@ -32,6 +32,14 @@ En este servidor se encuentra alojado:
 * Los archivos y base de datos de la Plataforma de Badges.
 * Base de Datos de los Juegos Calc Match y Lyrics Puzzle.
 
+###SERVIDOR NODEJS
+Es un Servidor de peticiones desarrollado con la libreria nodejs express, el cual tiene habilitado un puerto 8888, este servidor recibe parametros GET y se encarga de enviarlo al Servidor LRS.
+
+Contenido del Servidor:
+* Entorno de ejecución multiplataforma **nodejs**
+* Libreria nodejs xapiwrapper.
+* Archivo de ejecución app.js.
+
 
 ###SERVIDOR LRS
 Para la implementación de este servidor se utilizó el servidor ADL-LRS, el cual se encuentra bajo licencia Software Libre, este servidor ha sido desarrollado por Advanced Distributed Learning, Organización encargada de la estandarización de xAPI, para su ejecución es necesario ejecutarlo bajo Ubuntu 12.10, es posible también con Ubuntu 13.10 pero no garantiza su completa funcionabilidad. Esta desarrollado en Python.
