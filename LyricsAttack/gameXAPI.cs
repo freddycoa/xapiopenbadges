@@ -81,7 +81,7 @@ public class Shot : MonoBehaviour
 		
 		GameObject collidedWith = coll.gameObject;
 		
-		//cuando letra falsa choca con el pulpo, llama la funcion de matar todas las letras en la class ApplePicker2(limpiar todas las letras y mata una corazon)
+		//cuando letra falsa choca con el pulpo, llama la funcion de matar todas las letras en la class ApplePicker2(limpiar todas las letras y elimina un corazon)
 		if ( collidedWith.tag == "Incorrecto"){
 			
 			
