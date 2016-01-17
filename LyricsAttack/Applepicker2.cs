@@ -10,8 +10,8 @@ public class ApplePicker2 : MonoBehaviour {
 	public List<GameObject> heartList;
 	public bool NoHayVida =false;
 
-//建造三颗心
-	//*construir tres corazones
+
+	//*construir los tres corazones
 	void Start () {
 		heartList = new List<GameObject>();
 		for (int i=0; i<numHearts; i++) {
@@ -41,8 +41,7 @@ public class ApplePicker2 : MonoBehaviour {
 
 
 
-	//销毁所有的苹果，并减去一颗心（应在苹果出下线,小章鱼被消灭的,不小心灭掉正确答案。。情况下）
-	//mata todas las letras, y mata una corazon(en el caso de las letras esta debajo de el pulpo, el pulpo choca con la letra falsa y el projectile mata la letra correcta...)
+//Elimina todas las letras, y mata una corazon(en el caso de las letras esta debajo de el pulpo, el pulpo choca con la letra falsa y el proyectil elimina la letra correcta...)
 	public void IncorrectoDestroyed() {
 		//// Destroy all of the falling Apples
 		GameObject[] tIncorrectoArray = GameObject.FindGameObjectsWithTag( "Incorrecto" );
@@ -73,58 +72,6 @@ public class ApplePicker2 : MonoBehaviour {
 			Application.LoadLevel ("_Escenario0");
 		}
 	}
-
-/*	public void IceCreamDestroyed() {
-		//// Destroy all of the falling Apples
-		GameObject[] tIceCreamArray = GameObject.FindGameObjectsWithTag( "IceCream" );
-		foreach ( GameObject tGO in tIceCreamArray ) {
-			Destroy( tGO );
-		}
-		//// Destroy one of the Baskets
-		// Get the index of the last Basket in basketList
-		int basketIndex = basketList.Count-1;
-		// Get a reference to that Basket GameObject
-		GameObject tBasketGO = basketList[basketIndex];
-		// Remove the Basket from the List and destroy the GameObject
-		basketList.RemoveAt( basketIndex );
-	//	Destroy( tBasketGO );
-		// Restart the game, which doesn't affect HighScore.Score
-		if (basketList.Count == 0) {
-			Application.LoadLevel ("_Escenario0");
-		}
-	}
-
-*/
-
-	/*
-	public void h1Destroyed(){
-		GameObject h1GO = GameObject.Find("Heart1");
-		Destroy (h1GO);
-
-		}
-
-	public void h2Destroyed(){
-		GameObject h2GO = GameObject.Find("Heart2");
-		Destroy (h2GO);
-
-	}
-	public void h3Destroyed(){
-		GameObject h3GO = GameObject.Find("Heart3");
-		Destroy (h3GO);
-		NoHayVida = true;
-	}
-
-*/
-	/*
-	public void IncorrectoDestroyed() {
-		//// Destroy all of the falling Apples
-		GameObject[] tIncorrectoArray = GameObject.FindGameObjectsWithTag( "Incorrecto" );
-		foreach ( GameObject tGO in tIncorrectoArray ) {
-			Destroy( tGO );
-		}
-//			Application.LoadLevel ("_Escenario0");
-	}
-*/
 
 
 }
