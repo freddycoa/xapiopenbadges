@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">The Macth Game</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_segunda">segunda</string>
+    <string name="title_activity_usuarios">usuarios</string>
+    <string name="title_activity_registro">Registro</string>
+        <string name="title_activity_opciones_calculo">OpcionesCalculo</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+        <string name="title_activity_operacion">Operacion</string>
+    <string name="title_activity_test_xapi">TestXAPI</string>
+
+
+    <string name="app_activity_iri">http://adlnet.gov/jobaid/roses</string>
+    <string name="app_activity_name">Roses Job Aid xAPI Example</string>
+    <string name="app_activity_description">Roses Job Aid</string>
+
+
+    <string name="xapi_bootcamp_iri">http://adlnet.gov/event/2015/xapibootcamp</string>
+
+
+    <string name="lrs_endpoint">http://192.168.1.231:8000/xapi</string>
+    <string name="lrs_user">freddy</string>
+    <string name="lrs_password">ruciomoro</string>
+
+    <string name="default_name">xu</string>
+    <string name="default_email">mailto:xhan01@ucm.es</string>
+
+    <string name="scorm_profile_activity_state_id">http://adlnet.gov/xapi/profile/scorm/activity-state</string>
+    <string name="scorm_profile_attempt_state_id">"http://adlnet.gov/xapi/profile/scorm/attempt-state</string>
+    <string name="scorm_profile_activity_type_lesson_id">http://adlnet.gov/expapi/activities/lesson</string>
+    <string name="scorm_profile_activity_type_course_id">http://adlnet.gov/expapi/activities/course</string>
+    <string name="scorm_profile_activity_type_attempt_id">http://adlnet.gov/expapi/activities/attempt</string>
+    <string name="scorm_profile_activity_category_id">http://adlnet.gov/xapi/profile/scorm</string>
+
+    <string name="retrieve_attempts_error">Could not retrieve attempts from state: </string>
+    <string name="retrieve_as_attempt_error">Could not read activity state attempt data: </string>
+    <string name="statement_write_error">Write Statement Error: </string>
+    <string name="statement_get_error">Get Statement Error: </string>
+    <string name="get_as_error">No activity state returned (could not exist yet)</string>
+    <string name="write_as_error">Write State Error: </string>
+    <string name="updating_as_error">Error with updating activity state: </string>
+
+
+    <string name="preferences_screen_title">Create xAPI Actor Account</string>
+    <string name="preferences_key">org.adl.roses.preferences</string>
+    <string name="preferences_name_key">name</string>
+    <string name="preferences_email_key">email</string>
+
+
+</resources>

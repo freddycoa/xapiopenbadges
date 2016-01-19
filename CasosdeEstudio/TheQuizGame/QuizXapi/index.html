@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>The Questions Game</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/index.css">
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
+	<script src="js/xapiwrapper.min.js"></script>
+    <script src="js/config.js"></script>
+    
+    <script src="js/functions.js"></script>
+   
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<script type="text/javascript" src="js/quiz.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+
+	<!-- <button onclick="reloj()" id="activareloj"> Activar Contador </button>
+	<button onclick="clearInterval(q)">Stop time</button> -->
+	<div id="temporizador" align="center"> .... </div>
+
+	<div class="progress">
+		<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%" id="progresobueno">
+		<span class="sr-only">40% completado (éxito)</span>
+		
+		</div>
+	</div>
+
+
+	<div class="progress">
+	  <div class="progress-bar progress-bar-danger" role="progressbar"
+	       aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+	       style="width: 0%" id="progresomalo">
+	    <span class="sr-only">60% completado (aviso)</span>
+	  </div>
+	</div>
+
+	<button id="testInit" class="btn btn-primary"> Iniciar Test</button>
+
+	<div class="panel panel-primary" id="questiones"> **** </div> 
+
+
+	<ul class="pager">
+		<li ><a href="#"><< Previous</a></li>
+		<li ><a href="#" id="next">Next >></a></li>
+	</ul>
+
+	<div id="testoption" style="display:none"> test de option </div>
+
+
+	<!-- modal message alert "time is over" -->
+	<div class="modal fade" id="myModal">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title">Results of the Quiz</h4>
+	      </div>
+	      <div class="modal-body" id="infoResults">
+	        <p>Sorry budy, but try again.. !!&hellip;</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+</div>
+
+
+<!-- <button type="button" class="btn btn-success" onclick="sendCalc()">button</button>
+<input type="submit" name="" value="Test xAPI" onclick="sendTEST()"> -->
+</body>
+</html>
