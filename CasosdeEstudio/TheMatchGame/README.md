@@ -81,7 +81,7 @@ Repositorio de Estandar de de emision de badges a traves de una sola plataforma 
 
 
 #Seleccion de Operación y Ejemplo de Calculo
-![texto cualquiera por si no carga la imagen](Images/subscreen.png)
+>![texto cualquiera por si no carga la imagen](Images/subscreen.png)
 
 ##Test Rendimiento de App Android (AWS Device Farm)
 Uno de los desafios de una App Movil (Android) es que sea adaptable para diversos modelos de moviles debido rapido crecimiento y actualizaciones del OS Android, existen diversas API Android, suele ocurrir el caso en que una funcionalidad para una API no es compatible con otra, por ello es importante realizar un test con diversos dispositivos y verificar su rendimiento, para realizar la prueba de la App MatchCalc he utilizado la herramienta AWS Device Farm.
