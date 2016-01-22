@@ -8,6 +8,7 @@ La librería utilizadas para la establecer comunicación entre Android y Apache 
 
 
 ### Implementación de la Liberia Android Asynchronous Http Client
+```java
 	AsyncHttpClient client = new AsyncHttpClient();
 	String url="http://192.168.1.100:8080/loginAndroidPHP/FetchUserData.php";
 	
@@ -42,9 +43,12 @@ La librería utilizadas para la establecer comunicación entre Android y Apache 
 	}
 	
 	}
-	
+```	
+
 	
 	### Implementación de lectura de URL y llamado de función remota JS
+
+```java
 	
 			// ASIGNACION DE VARIABLE A WEBVIEW 
 	wbXAPI = (WebView) findViewById(R.id.webView);
@@ -63,7 +67,7 @@ La librería utilizadas para la establecer comunicación entre Android y Apache 
 	 Toast.makeText(getApplicationContext(), "Registro Exitoso", Toast.LENGTH_LONG).show();
 		// Cambio a ventana de ganador
 	 startActivity(new Intent(getBaseContext(), badgeEmitido.class));
-
+```
 
 #Sinopsis
 La trama es el cálculo numérico de una operación matemática; en la entrada principal tiene 4 opciones a elegir Suma, Resta, Multiplicación y División, el usuario o estudiante debe elegir el reto, cada reto contara con 3 preguntas, si las 3 son respondidas entonces se emitirá un Badge, si erra en una respuesta deberá empezar de nuevo el reto. Dependiendo del tipo de operación que vaya a realizar el jugador emitira un Badge, si logra completar todas las operaciones tambien emitira un Badge que indicara el nivel completo del Juego.
