@@ -95,5 +95,5 @@ console.log("Servidor Iniciado.");
 ###Instalación y Ejecución del Servidor servernodejs:
 1. Instalar nodejs en el Servidor del Juego
 2. Descargar la carpeta del servidor servernodejs
-3. Abrir la terminal Windows, Mac o Linux (Recomiendo), ubicamos en la carpeta **cd path/servernodejs/**, una vez ubicado en la carpeta ejecutamos el 2do comando **node app.js** podrán apreciar en la terminal un mensaje "Servidor en Ejecucion".
+3. Abrir la terminal Windows, Mac o Linux (Recomiendo), ubicamos en la carpeta **cd path/servernodejs/**, una vez ubicado en la carpeta ejecutamos el 2do comando **node app.js** podrán apreciar en la terminal un mensaje "Servidor Iniciado".
 
