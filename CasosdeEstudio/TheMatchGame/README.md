@@ -46,7 +46,7 @@ La librería utilizadas para la establecer comunicación entre Android y Apache 
 ```	
 
 	
-	### Implementación de lectura de URL y llamado de función remota JS
+### Implementación de lectura de URL y llamado de función remota JS
 
 ```java
 	
