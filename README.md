@@ -50,3 +50,9 @@ Este servidor fue instalado en una máquina virtual Amazon AWS, y cuenta con un 
 
 En este servidor se encuentra alojado:
 * Los archivos y base de datos (PosgreSQL) de la ADL-LRS.
+
+
+Una de las ventajas que ofrece Modelo de emisión de Badges a traves de xAPI es su implementación a traves de diversas plataformas tecnologias Dispositivos Moviles, Computadoras Personales y plataformas Web. Este modelo es adaptable a los lenguajes de programación mas conocidos y utilizados (Java, Javascript, cSharp) que en el caso de estudio se ha utilizado estos tres lenguajes.
+
+###Lenguajes Utilizados
+ Java es uno de los lenguajes mas completos, se pueden implementar dos librerias para establecer la comunicación xAPI, una es por medio libreria propia en Java proporcionada por ADL-LRS llamada JxAPI, vienen los parametros definidos para la envio de data al LRS, otra forma es con la libreria xapiwrapper, la cual es una liberia desarrollada en Javascript que permite la recepción y envio de data con el Servidor LRS, esta liberia es conveniente debido al grado de adaptabilidad que tiene Javascript, sin embargo hay una libreria de Nodejs que permite crear un Servidor de peticiones, en el solo tendremos una url recibiendo tareas y este se encarga del envio de la información que deseamos guardar en el Badge.
