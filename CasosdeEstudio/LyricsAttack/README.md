@@ -81,7 +81,7 @@ console.log("Servidor Iniciado.");
 
 ```
 
-![GitHub Logo](Images/screen2.png)
+![GitHub Logo](Images/screen1.png)
 
 
 ###Metodo de conexión y envios de datos del Badge al Servidor NODEJS
