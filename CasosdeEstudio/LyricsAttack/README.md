@@ -19,7 +19,6 @@ Repositorio de Estandar de de emision de badges a traves de una sola plataforma 
 ##Comunicación Unity Servidor LRS
 Para la comunicación desde c# en Unity, se establece a traves de la clase **WWW** desde donde se invoca la url de un Servicio Web, normalmente estos servicios no tienen una funcion autoejecutable de JS, por lo que se debe establecer un servidor de escucha, razon por la cual se ha utilizado la libreria nodejs express **xapiwrapper de ADL**, esta libreria permite realizar un servidor de escucha y podemos configurar el puerto de comunicación, ademas de esto, fue necesario añadirle otras funcionalidades como recepcion de get, y configuración de puerto. EL get es necesario para recibir los parametros o data de los usuarios los cuales se deben enviar desde el juego, el codigo se puede apreciar en app.js, aunque para la ejecucion completa del servidor es necesario la carpeta servernodejs, es necesario tener instalado el servicio nodejs.
 
-![GitHub Logo](Images/screen1.png)
 
 
 ###Servidor NODEJS (Asignación de Datos de acceso al Servidor LRS y aginación de puerto de comunicación).
