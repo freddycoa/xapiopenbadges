@@ -80,11 +80,7 @@ Repositorio de Estandar de de emision de badges a traves de una sola plataforma 
 
 
 
-
-# 
-# 
-# 
-###Seleccion de Operación y Ejemplo de Calculo
+#Seleccion de Operación y Ejemplo de Calculo
 ![texto cualquiera por si no carga la imagen](Images/subscreen.png)
 
 ##Test Rendimiento de App Android (AWS Device Farm)
