@@ -62,7 +62,7 @@ La librería utilizadas para la establecer comunicación entre Android y Apache 
 		// Lectura de URL
 	wbXAPI.loadUrl("http://192.168.1.100:8080/AndroidDB/badgeMobile.html");
 		// Llamado de Funcion Remota Javascript 
-	 wbXAPI.loadUrl("javascript:sendCalc('Parametros que se guardaran ene l Badge')");
+	 wbXAPI.loadUrl("javascript:sendBadges('Parametros que se guardaran ene l Badge')");
 	 	// Mensaje de Registro de Badge
 	 Toast.makeText(getApplicationContext(), "Registro Exitoso", Toast.LENGTH_LONG).show();
 		// Cambio a ventana de ganador
