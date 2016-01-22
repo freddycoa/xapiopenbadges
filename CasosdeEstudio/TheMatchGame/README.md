@@ -19,7 +19,7 @@ La librería utilizadas para la establecer comunicación entre Android y Apache 
 	
 	RequestHandle post= client.post(url, requestParams, new AsyncHttpResponseHandler() {
 	String usuario= null;
-	
+	  
 	@Override
 	public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
 	if(statusCode==200){
