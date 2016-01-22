@@ -77,7 +77,9 @@ Repositorio de Estandar de de emision de badges a traves de una sola plataforma 
 
 ![texto cualquiera por si no carga la imagen](Images/screen.png)
 
-###
+#
+#
+#
 ###Seleccion de Operación y Ejemplo de Calculo
 ![texto cualquiera por si no carga la imagen](Images/subscreen.png)
 
