@@ -81,6 +81,9 @@ console.log("Servidor Iniciado.");
 
 ```
 
+![GitHub Logo](Images/screen2.png)
+
+
 ###Metodo de conexión y envios de datos del Badge al Servidor NODEJS
 ```cSharp
 	// SE ENVIA POR GET TODOS LOS PARAMETROS RELACIONADOS CON EL BADGE
