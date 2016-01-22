@@ -22,7 +22,7 @@ Para la comunicación desde c# en Unity, se establece a traves de la clase **WWW
 ![GitHub Logo](Images/screen1.png)
 
 
-###Servidor NODEJS
+###Servidor NODEJS (Asignación de Datos de acceso al Servidor LRS y aginación de puerto de comunicación).
 ```javascript
 var http = require('http');
 var url = require('url');
@@ -81,8 +81,10 @@ console.log("Servidor Iniciado.");
 
 ```
 
+###Metodo de conexión y envios de datos del Badge al Servidor NODEJS
 ```cSharp
-    string url = "http://localhost:8888/?mbox=ingfcoa@gmail.com&&nameactor=alexiunity";
+	// SE ENVIA POR GET TODOS LOS PARAMETROS RELACIONADOS CON EL BADGE
+    string url = "http://localhost:8888/?mbox=ingfcoa@gmail.com&&nameactor=Freddy Coa";
 			WWW www = new WWW(url);
 			StartCoroutine(WaitForRequest(www));
 ```
