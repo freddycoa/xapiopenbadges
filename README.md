@@ -51,7 +51,7 @@ Este servidor fue instalado en una máquina virtual Amazon AWS, y cuenta con un 
 En este servidor se encuentra alojado:
 * Los archivos y base de datos (PosgreSQL) de la ADL-LRS.
 
-##VENTAJAS
+###VENTAJAS
 Una de las ventajas que ofrece Modelo de emisión de Badges a traves de xAPI es su implementación a traves de diversas plataformas tecnologias Dispositivos Moviles, Computadoras Personales y plataformas Web. Este modelo es adaptable a los lenguajes de programación mas conocidos y utilizados (Java, Javascript, cSharp) que en el caso de estudio se ha utilizado estos tres lenguajes.
 
 ###Lenguajes Utilizados
