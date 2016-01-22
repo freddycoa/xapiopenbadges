@@ -75,5 +75,13 @@ La trama es el cálculo numérico de una operación matemática; en la entrada p
 
 Repositorio de Estandar de de emision de badges a traves de una sola plataforma mediante la combinancion de estandares, los principales para comunicación xAPI (ADL), Openbadges (Mozilla). A continuacion se mostraran tres carpetas en la que cada una tendra un ejemplo de comunicación y emision de badges a traves del estandar propuesto.
 
-
 ![texto cualquiera por si no carga la imagen](Images/screen.png)
+
+##Test Rendimiento de App Android (AWS Device Farm)
+Uno de los desafios de una App Movil (Android) es que sea adaptable para diversos modelos de moviles debido rapido crecimiento y actualizaciones del OS Android, existen diversas API Android, suele ocurrir el caso en que una funcionalidad para una API no es compatible con otra, por ello es importante realizar un test con diversos dispositivos y verificar su rendimiento, para realizar la prueba de la App MatchCalc he utilizado la herramienta AWS Device Farm.
+
+![texto cualquiera por si no carga la imagen](Images/testapp1.png)
+
+![texto cualquiera por si no carga la imagen](Images/testapp2.png)
+
+
