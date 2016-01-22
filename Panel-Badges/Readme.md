@@ -3,4 +3,4 @@ Basada en un entorno web, debido a su alta adaptabilidad, el usuario o estudiant
 
 
 
-![GitHub Logo](ubuntu.png)
+![GitHub Logo](PlataformaBadge.png)
