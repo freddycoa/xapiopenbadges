@@ -17,18 +17,17 @@ Repositorio de Estandar de de emision de badges a traves de una sola plataforma 
 
 
 ```javascript
-var contador = 0;
+var contador = 0; // INICIAMOS CONTADOR EN 0
 var q;
 
 function reloj(){
-	q  = setInterval(contar,1000);
+	q  = setInterval(contar,1000); // CONTADOR POR INTERVALO DE SEGUNDOS
 }
 
 
 function contar(){
 	contador++;
 	document.getElementById("temporizador").innerHTML = contador;
-	//document.getElementById("question").value = "Johnny Bravo";
 
 	if(contador == 25){
 		clearInterval(q);
@@ -89,30 +88,6 @@ var contInciertos = 50;
 
 		});
 
-var cq = 1;
-function preguntas(){
-
-	if(cq == 1){
-		document.getElementById("question").innerHTML = "Question Number " + cq;
-		reloj();
-	}
-
-	if(cq == 2){
-		document.getElementById("question").innerHTML = "Question Number " + cq;
-	}
-
-
-	if(cq == 3){
-		document.getElementById("question").innerHTML = "Question Number " + cq;
-	}
-
-}
-
-function contaropcionespreguntas(){
-	cq++;
-	contador = 0;
-	preguntas();
-}
 
 
 function sendingResults(id){
