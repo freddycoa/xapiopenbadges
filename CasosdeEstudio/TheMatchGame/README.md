@@ -70,7 +70,7 @@ La librería utilizadas para la establecer comunicación entre Android y Apache 
 ```
 
 ### Implementacion de la libreria Javascript ADL-xapiwrapper
-Se establece la configuracion del endpoint es la dirección del Servidor LRS http://52.88.101.103:8000/xAPI/ usuario y correo que utilizara la entidad desarrolladora del juego para la conexion con el Servidor LRS.
+* Se establece la configuracion del endpoint es la dirección del Servidor LRS http://52.88.101.103:8000/xAPI/ usuario y correo que utilizara la entidad desarrolladora del juego para la conexion con el Servidor LRS.
 
 ```javascript
 function Config() {
@@ -79,7 +79,83 @@ function Config() {
 
 Config.endpoint = "http://192.168.1.231:8000/xapi/"; // URL del Servidor LRS
 Config.user = "match_game"; // _Usuario Entidad del Juego
-Config.password = "ruciomoro"; // Contraseña de comunicación entidad del Juego
+Config.password = "macthpassword"; // Contraseña de comunicación entidad del Juego
+``` 
+
+* Ya establecida la configuración de comunicación con el Servidor LRS procedemos a realizar la funcion Javascript que emitira el Badge
+
+```javascript
+// Dentro del Senbadge() asignas los parametros que necesite la entidad que contenga el Badge que desee emitir
+function sendBadge(idCalc, resultCalc, exito) {
+
+    var d = new Date();
+    doConfig();
+
+    // statement para lanzamiento 
+        var stmt = {
+    "actor": {
+        "mbox": "mailto:fcoa@ucm.es",
+        "name": "fredsom",
+        "objectType": "Agent"
+    },
+    "verb": {
+        "id": "http://xapi.sigescar.com.ve/verbs/calculo",
+        "display": {
+            "en-US": "Bagde"
+        }
+    },
+    "object": {
+        "id": "http://xapi.sigescar.com.ve/activities/sesion",
+        "definition": {
+            "name": {
+                "en-US": idCalc
+            },
+            "description": {
+
+	        "en-US": "Math Calcs",
+	   
+	        "time": {
+                "hour": d.getHours(),
+                "minutes": d.getMinutes(),
+                "seconds": d.getSeconds()
+                    },
+                    
+                "points": {
+                "score": 0,
+                "potition": 80
+                    },
+				
+				"level": {
+                "number": 0,
+                "description" : "Maximo Nivel"
+                    },
+                
+                "potition": {
+                "number": 0,
+                "description" : "potition is ..",
+                "total" : 10
+                    },
+                
+                "end": {
+                "date": d.getDay() + "/" + d.getMonth() + "/" + d.getFullYear(),
+                "description" : "Description end"
+                    },
+                
+                "grade": {
+                "number": 0,
+                "description" : "Premio en Calculos Matematicos",
+                "imagebadge" : "http://www.xapi.sigescar.com.ve/badge/584669.png"
+                    }
+            }
+        },
+        "objectType": "Activity"
+    }
+}; 
+
+    // Envio statement a traves de la funcion sendStatement
+     ADL.XAPIWrapper.sendStatement(stmt);
+	
+}
 ``` 
 
 
