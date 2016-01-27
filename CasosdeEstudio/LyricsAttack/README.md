@@ -76,6 +76,7 @@ console.log("Servidor Iniciado.");
 
 
 ###Metodo de conexión y envios de datos del Badge al Servidor NODEJS
+Este trozo de codigo se de colocar en la función que emitira el Badge, asignando por get los parametros que se desea enviar, es importante recalcar que estos parametros son la informarción que se almacenara en el Badge.
 ```cSharp
 	// SE ENVIA POR GET TODOS LOS PARAMETROS RELACIONADOS CON EL BADGE
     string url = "http://localhost:8888/?mbox=ingfcoa@gmail.com&&nameactor=Freddy Coa";
