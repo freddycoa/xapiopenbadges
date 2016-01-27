@@ -70,6 +70,26 @@ La librería utilizadas para la establecer comunicación entre Android y Apache 
 ```
 
 ### Implementacion de la libreria Javascript ADL-xapiwrapper
+
+* Establecemos una web (html, asp o php), y vamos hacer el llamado de la libreria xapiwrapper, configuración, funcion de envio de Badge.
+
+```html
+<html>
+<head>
+    <script src="controller/xapiwrapper.min.js"></script>
+    <script src="controller/config.js"></script>
+    <script src="controller/functions.js"></script>
+</head>
+
+<body>
+
+Emision de Badges con llamada externa de Funcion Javascript SendBadges desde App-Android
+
+</body>
+</html>
+
+```
+
 * Se establece la configuracion del endpoint es la dirección del Servidor LRS http://52.88.101.103:8000/xAPI/ usuario y correo que utilizara la entidad desarrolladora del juego para la conexion con el Servidor LRS.
 
 ```javascript
