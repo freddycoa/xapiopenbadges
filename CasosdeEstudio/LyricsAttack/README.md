@@ -5,7 +5,7 @@ Emision de Badges a traves de Juego desarrollado en Unity bajo el Lenguaje de Pr
 ![GitHub Logo](Images/screen.png)
 
 
-Repositorio de Estandar de de emision de badges a traves de una sola plataforma mediante la combinancion de estandares, los principales para comunicación xAPI (ADL), Openbadges (Mozilla). A continuacion se mostraran tres carpetas en la que cada una tendra un ejemplo de comunicación y emision de badges a traves del estandar propuesto.
+Repositorio de Estandar de de emision de badges a traves de una sola plataforma mediante la combinación de estandares, los principales para comunicación xAPI (ADL), Openbadges (Mozilla). A continuacion se mostraran tres carpetas en la que cada una tendra un ejemplo de comunicación y emision de badges a traves del estandar propuesto.
 
 
 ##Comunicación Unity Servidor LRS
