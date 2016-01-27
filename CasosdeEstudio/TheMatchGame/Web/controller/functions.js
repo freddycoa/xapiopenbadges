@@ -120,59 +120,6 @@ function seleccionarC(id){
 		
 		}
 
-function courseExited() {
-
-    doConfig();
-
-    // statement for launching content
-    var stmt = {
-        "actor": actor,
-        "verb": ADL.verbs.exited,
-        "object": baseActivity
-    };
-
-    // Send exited statement
-    ADL.XAPIWrapper.sendStatement(stmt);
-
-}
-
-//suply the chapter, the page, and any sub-activity in that chapter and page
-function createContext( parentChapter, parentPage, subParentActivity ) {
-    var baseContext = {
-        "contextActivities": {
-            "parent": [
-                baseActivity
-            ]
-        }
-    };
-
-    if ( typeof parentChapter !== "undefined" && typeof parentPage !== "undefined" ) {
-        var chapterActivity = {
-            "id": moduleID + parentChapter + "/" + parentPage,
-            "definition": {
-                "name": {
-                    "en-US": moduleName + ": " + parentChapter + ", page: " + parentPage
-                }
-            },
-            "objectType": "Activity"
-        };
-        baseContext.contextActivities.parent.push(chapterActivity);
-    
-        if ( typeof subParentActivity !== "undefined" ) {
-            var subActivity = {
-                "id": moduleID + parentChapter + "/" + parentPage + "#" + subParentActivity,
-                "definition": {
-                    "name": {
-                        "en-US": moduleName + ": " + parentChapter + ", page: " + parentPage + " " + subParentActivity
-                    }
-                },
-                "objectType": "Activity"
-            };
-            baseContext.contextActivities.parent.push(subActivity);
-        }
-    }
-    return baseContext;
-}
 
 function carga(){
 //window.attachEvent('onload',sendCalc("newhola3", "Android", "Android"));
