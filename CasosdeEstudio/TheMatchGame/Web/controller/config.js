@@ -19,7 +19,7 @@ var baseActivity = {
             "en-US": moduleName
         },
         "description": {
-            "en-US": "Test de XAPI & JQuery Mobile, Proyecto Master Informatica UCM."
+            "en-US": "Test de XAPI & Android Mobile, Proyecto Master Informatica UCM."
         }
     },
     "objectType": "Activity"
