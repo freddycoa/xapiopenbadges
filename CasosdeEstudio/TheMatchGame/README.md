@@ -46,7 +46,7 @@ La librería utilizadas para la establecer comunicación entre Android y Apache 
 ```	
 
 	
-### Implementación de lectura de URL y llamado de función remota JS
+### Implementación de lectura de URL y llamado de función remota JS en Android
 
 ```java
 	
@@ -68,6 +68,18 @@ La librería utilizadas para la establecer comunicación entre Android y Apache 
 		// Cambio a ventana de ganador
 	 startActivity(new Intent(getBaseContext(), badgeEmitido.class));
 ```
+
+### Implementacion de la libreria Javascript ADL-xapiwrapper, se establece la configuracion del endpoint es la dirección del Servidor LRS http://52.88.101.103:8000/xAPI/ usuario y correo que utilizara la entidad desarrolladora del juego para la conexion con el Servidor LRS.
+
+```javascript
+function Config() {
+	"use strict";
+}
+
+Config.endpoint = "http://192.168.1.231:8000/xapi/"; // URL del Servidor LRS
+Config.user = "match_game"; // _Usuario Entidad del Juego
+Config.password = "ruciomoro"; // Contraseña de comunicación entidad del Juego
+``` 
 
 
 ##Test Rendimiento de App Android (AWS Device Farm)
