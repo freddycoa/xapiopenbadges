@@ -45,4 +45,22 @@ Repositorio de Estandar de de emision de badges a traves de una sola plataforma 
 
 ```
 
+### Estructura Web y llamado de funciones Javascript a partir de la Libreria ADL-xapiwrapper
+
+1. Se estable Web principal contenedora de las funciones javascript, es importante hacer el llamado o incluir los ficheros Js en la Web como se indica en la parte inferior.
+	* xapiwrapper: Libreria comunicación ADL-LRS.
+	* config: Configuracion de datos de acceso de usuario Entidad del Juego.
+	* functions: Funcion establecida para el envio de datos del Badge.
+
+```html
+<script src="js/xapiwrapper.min.js"></script>
+<script src="js/config.js"></script>
+<script src="js/functions.js"></script>
+
+```
+
+
+
+
+
 ![GitHub Logo](Images/Imagen2.png)
