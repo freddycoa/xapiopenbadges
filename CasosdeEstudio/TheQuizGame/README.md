@@ -45,4 +45,4 @@ Repositorio de Estandar de de emision de badges a traves de una sola plataforma 
 
 ```
 
-![GitHub Logo](Imagen2.png)
+![GitHub Logo](Images/Imagen2.png)
