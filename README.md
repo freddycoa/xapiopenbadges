@@ -4,15 +4,35 @@ Repositorio de Estandar de de emision de badges a traves de una sola plataforma 
 
 # Propuesta de un modelo de intercambio y almacenamiento de badges con xAPI y Mozilla Open Badges
 
+La propuesta principal del modelo XOB es la emisión de Badges con xAPI a través de un Servidor LRS y el API-Rest Mozilla OpenBadges. Como es bien conocido ambas plataformas tecnológicas:
+
+LRS-ADL es un estándar requerido en el control y manejo de información E-learning.
+
+Openbadges es un Estándar que permite la creación y verificación de Badges. 
+
+En el que el modelo XOB plantea una unión de ambas plataformas usando xAPI que permite la comunicación con un Juego o Plataforma E-learning, para ello se plantea un modelo estándar en xAPI para el envío de los datos necesarios para la creación y emisión de un Badge utilizando los principales lenguajes de programación.
+
+
 ##Formato de Comunicación entre Juego y LRS con xAPI
-Juego: El juego debe estar determinado con Metas como objetivos y estrategias para alcanzar un nivel, Puntos se lograran de acuerdo al tiempo y métodos utilizados para lograr los objetivos, y Niveles cantidad de etapas, se puede denir como grado alcanzado en el juego.
+
+La Gamificacion es nuevo concepto en el que define non gamming, cuyo fin es aprender jugando, esta metodologia de aprendizaje viene implementandose desde hace algunos años, no ha sido hasta el día de hoy donde ha incrementado su utilización. Una de las formas ideales de aprender hoy en dia debido a la facilidad de la tecnologia, bajos costos que representan, presenta una forma divertida para los estudiantes. El modelo XOB plantea usar este concepto Gamificación para ofrecer la emision de Badges, permitiendo asi a cualquier entidad emitir sus propios Badges o Insignias a traves de sus juegos. 
+
+El modelo XOB establece 3 reglas principales:
+
+* Cada juego o entidad debe contar con un Servicio de comunicación.
+* La entidad del juego proporcionara la información y tipo de Badge a emitir.
+* Este modelo se puede implementar en juegos de PC, Movil o Web.
+
+
+La entidad del juego debe establecer las condiciones para la emisión del Badge, en que los principales parametros establecidos en xAPI son Actor, Verbo, Objetivo; continuando con la estructura principal de xAPI, para el modelo XOB se establecen los siguientes parametros que se incluyen dentro de la descripción de la rama Objetivo: \textbf{Time, Points, Level, Position, End, Grade}. 
+
+El Juego debe estar estructurado con Objetivos para los que se debe cumplir una serie de estrategias para ir escalando por Niveles dentro de un rango de Tiempo, en la que cumplidos todos los Objetivos hasta la Meta Final se emitirá el Badge de acuerdo al Grado alcanzado en el juego; segun los Objetivos, Niveles y tiempo obtenidos por el Jugador se condicionára el tipo de Grado. 
 
 ####Normas del Juego:
 * Establecer condiciones de puntaje: Indicar el nivel o tiempo de obtener puntos.
-* Grado de Dificultad: Establecer un mínimo de 3 niveles de dificultad. También se puede realizar un test para asignar el nivel para el jugador.
-* Base de Datos: Preferiblemente la data debe guardar en el dispositivo a utilizar, por lo tanto se debe emplear el uso de SQLITE, en el caso de no estar conectado a internet, el jugador podrá reenviar luego la
-información de su Badge.
-* Registro: Para que el Usuario o Jugador puedan ingresar al juego primero deberán registrar sus datos, Nombres, Edad, Correo Electrónico (importante: indicar al Usuario que el correo a utilizar debe ser el utilizado en juegos que estén desarrollados bajo este Estándar de xAPI).
+* Grado de Dificultad: Establecer mínimo 3 niveles de dificultad. También se puede realizar un test para asignar el nivel para el jugador.
+* item	Base de Datos: Preferiblemente la data debe guardar en el dispositivo a utilizar, por lo tanto se debe emplear el uso de SQLITE, en el caso de no estar conectado a internet, el jugador podrá reenviar luego la información de su Badge.
+* item	Registro: Para que el Usuario o Jugador puedan ingresar al juego primero deberán registrar sus datos, Nombres, Edad, Correo Electrónico (importante: indicar al Usuario que el correo a utilizar debe ser el utilizado en juegos que estén desarrollados bajo este Estándar de xAPI).
 
 ##LRS: Learning Record Store:
 LRS: Learning Record Store, Puede registrar casi cualquier actividad que estemos realizando en un dispositivo, ver videos, pequeñas lecturas, clics que hagamos en enlaces o botones, juegos, no depende de una plataforma de E-learning para extraer las experiencias, además los registros no requieren envío inmediato, la información se guarda en el dispositivos donde realizamos la actividad, en caso de no estar conectados a internet, este hará el envío de los datos de experiencia cuando nos conectemos a una Red.
