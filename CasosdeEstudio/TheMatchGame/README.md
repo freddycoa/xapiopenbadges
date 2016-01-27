@@ -69,7 +69,8 @@ La librería utilizadas para la establecer comunicación entre Android y Apache 
 	 startActivity(new Intent(getBaseContext(), badgeEmitido.class));
 ```
 
-### Implementacion de la libreria Javascript ADL-xapiwrapper, se establece la configuracion del endpoint es la dirección del Servidor LRS http://52.88.101.103:8000/xAPI/ usuario y correo que utilizara la entidad desarrolladora del juego para la conexion con el Servidor LRS.
+### Implementacion de la libreria Javascript ADL-xapiwrapper
+Se establece la configuracion del endpoint es la dirección del Servidor LRS http://52.88.101.103:8000/xAPI/ usuario y correo que utilizara la entidad desarrolladora del juego para la conexion con el Servidor LRS.
 
 ```javascript
 function Config() {
