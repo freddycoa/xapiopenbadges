@@ -46,7 +46,7 @@ La librería utilizadas para la establecer comunicación entre Android y Apache 
 ```	
 
 	
-### Implementación de lectura de URL y llamado de función remota JS
+### Implementación de lectura de URL y llamado de función remota JS en Android
 
 ```java
 	
@@ -69,17 +69,115 @@ La librería utilizadas para la establecer comunicación entre Android y Apache 
 	 startActivity(new Intent(getBaseContext(), badgeEmitido.class));
 ```
 
-#Sinopsis
-La trama es el cálculo numérico de una operación matemática; en la entrada principal tiene 4 opciones a elegir Suma, Resta, Multiplicación y División, el usuario o estudiante debe elegir el reto, cada reto contara con 3 preguntas, si las 3 son respondidas entonces se emitirá un Badge, si erra en una respuesta deberá empezar de nuevo el reto. Dependiendo del tipo de operación que vaya a realizar el jugador emitira un Badge, si logra completar todas las operaciones tambien emitira un Badge que indicara el nivel completo del Juego.
+### Implementacion de la libreria Javascript ADL-xapiwrapper
 
+* Establecemos una web (html, asp o php), y vamos hacer el llamado de la libreria xapiwrapper, configuración, funcion de envio de Badge.
 
-Repositorio de Estandar de de emision de badges a traves de una sola plataforma mediante la combinancion de estandares, los principales para comunicación xAPI (ADL), Openbadges (Mozilla). A continuacion se mostraran tres carpetas en la que cada una tendra un ejemplo de comunicación y emision de badges a traves del estandar propuesto.
+```html
+<html>
+<head>
+    <script src="controller/xapiwrapper.min.js"></script>
+    <script src="controller/config.js"></script>
+    <script src="controller/functions.js"></script>
+</head>
 
-![texto cualquiera por si no carga la imagen](Images/screen.png)     
+<body>
 
+Emision de Badges con llamada externa de Funcion Javascript SendBadges desde App-Android
 
+</body>
+</html>
 
-![texto cualquiera por si no carga la imagen](Images/subscreen.png)
+```
+
+* Se establece la configuracion del endpoint es la dirección del Servidor LRS http://52.88.101.103:8000/xAPI/ usuario y correo que utilizara la entidad desarrolladora del juego para la conexion con el Servidor LRS.
+
+```javascript
+function Config() {
+	"use strict";
+}
+
+Config.endpoint = "http://192.168.1.231:8000/xapi/"; // URL del Servidor LRS
+Config.user = "match_game"; // _Usuario Entidad del Juego
+Config.password = "macthpassword"; // Contraseña de comunicación entidad del Juego
+``` 
+
+* Ya establecida la configuración de comunicación con el Servidor LRS procedemos a realizar la funcion Javascript que emitira el Badge
+
+```javascript
+// Dentro del Senbadge() asignas los parametros que necesite la entidad que contenga el Badge que desee emitir
+function sendBadge(idCalc, resultCalc, exito) {
+
+    var d = new Date();
+    doConfig();
+
+    // statement para lanzamiento 
+        var stmt = {
+    "actor": {
+        "mbox": "mailto:fcoa@ucm.es",
+        "name": "fredsom",
+        "objectType": "Agent"
+    },
+    "verb": {
+        "id": "http://xapi.sigescar.com.ve/verbs/calculo",
+        "display": {
+            "en-US": "Bagde"
+        }
+    },
+    "object": {
+        "id": "http://xapi.sigescar.com.ve/activities/sesion",
+        "definition": {
+            "name": {
+                "en-US": idCalc
+            },
+            "description": {
+
+	        "en-US": "Math Calcs",
+	   
+	        "time": {
+                "hour": d.getHours(),
+                "minutes": d.getMinutes(),
+                "seconds": d.getSeconds()
+                    },
+                    
+                "points": {
+                "score": 0,
+                "potition": 80
+                    },
+				
+				"level": {
+                "number": 0,
+                "description" : "Maximo Nivel"
+                    },
+                
+                "potition": {
+                "number": 0,
+                "description" : "potition is ..",
+                "total" : 10
+                    },
+                
+                "end": {
+                "date": d.getDay() + "/" + d.getMonth() + "/" + d.getFullYear(),
+                "description" : "Description end"
+                    },
+                
+                "grade": {
+                "number": 0,
+                "description" : "Premio en Calculos Matematicos",
+                "imagebadge" : "http://www.xapi.sigescar.com.ve/badge/584669.png"
+                    }
+            }
+        },
+        "objectType": "Activity"
+    }
+}; 
+
+    // Envio statement a traves de la funcion sendStatement
+     ADL.XAPIWrapper.sendStatement(stmt);
+	
+}
+``` 
+
 
 ##Test Rendimiento de App Android (AWS Device Farm)
 Uno de los desafios de una App Movil (Android) es que sea adaptable para diversos modelos de moviles debido rapido crecimiento y actualizaciones del OS Android, existen diversas API Android, suele ocurrir el caso en que una funcionalidad para una API no es compatible con otra, por ello es importante realizar un test con diversos dispositivos y verificar su rendimiento, para realizar la prueba de la App MatchCalc he utilizado la herramienta AWS Device Farm.
