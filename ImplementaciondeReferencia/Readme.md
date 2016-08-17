@@ -19,11 +19,11 @@ ClassVerbXOB xob = new ClassVerbXOB();
 
 ## 1. Verb time
 
-| verb   	|      params      	|  Tipos 	|
+| verb   	|      params      	|  Description 	|
 |----------	|:-------------:	|------:	|
-| hour 	|  ("hour", value) 	| (String, int) 	|
-| minutes 	|    ("minutes", value)   	|   (String, int) 	|
-| seconds 	| ("seconds", value) 	|    (String, int) 	|
+| hour 	|  ("hour", int) 	| Hora	|
+| minutes 	|    ("minutes", int)   	|   Minutos	|
+| seconds 	| ("seconds", int) 	|    Segundos 	|
 
 
 **Ejemplo de ejecución:**
@@ -35,10 +35,10 @@ ClassVerbXOB xob = new ClassVerbXOB();
 
 ## 2. Verb points
 
-| verb   	|      params      	|  Tipos 	|
+| verb   	|      params      	|  Description 	|
 |----------	|:-------------:	|------:	|
-| score 	|  ("score", value) 	| (String, String) 	|
-| position 	|    ("position", value)   	|   (String, int) 	|
+| score 	|  ("score", int) 	| Puntuación 	|
+| position 	|    ("position", int)   	|   Posición	|
 
 **Ejemplo de ejecución:**
 ```java
@@ -48,10 +48,10 @@ ClassVerbXOB xob = new ClassVerbXOB();
 
 ## 3. Verb level
 
-| verb   	|      params      	|  Tipos 	|
+| verb   	|      params      	|  Description 	|
 |----------	|:-------------:	|------:	|
-| number 	|  ("number", value) 	| (String, int) 	|
-| description 	|    ("description", value)   	|   (String, String) 	|
+| number 	|  ("number", int) 	| Número de Nivel 	|
+| description 	|    ("description", String)   	|   Descripción del nivel 	|
 
 **Ejemplo de ejecución:**
 ```java
@@ -61,11 +61,11 @@ ClassVerbXOB xob = new ClassVerbXOB();
 
 ## 4. Verb position
 
-| verb   	|      params      	|  Tipos 	|
+| verb   	|      params      	|  Description 	|
 |----------	|:-------------:	|------:	|
-| number 	|  ("score", value) 	| (String, String) 	|
-| description 	|    ("position", value)   	|   (String, int) 	|
-| total   | ("total", value)   |  (String, int)   |
+| number 	|  ("score", String) 	| Número de posición 	|
+| description 	|    ("position", int)   	|   Descripción de la posición 	|
+| total   | ("total", int)   |  (String, int)   |
 
 **Ejemplo de ejecución:**
 ```java
@@ -76,11 +76,11 @@ ClassVerbXOB xob = new ClassVerbXOB();
 
 ## 5. Verb grade
 
-| verb   	|      params      	|  Tipos 	|
+| verb   	|      params      	|  Description 	|
 |----------	|:-------------:	|------:	|
-| number 	|  ("number", value) 	| (String, int) 	|
-| description 	|    ("description", value)   	|   (String, String) 	|
-| imagebadge  |   ("imagebadge", value)     |    (String, String) 
+| number 	|  ("number", int) 	| Número del grado obtenido 	|
+| description 	|    ("description", String)   	|   Descripción del grado 	|
+| imagebadge  |   ("imagebadge", String)     |    Url de imagen del Badge   |
 
 **Ejemplo de ejecución:**
 ```java
