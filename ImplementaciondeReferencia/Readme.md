@@ -86,6 +86,6 @@ ClassVerbXOB xob = new ClassVerbXOB();
 ```java
   xob.grade("score",1);
   xob.grade("position","Badge obtenido con X niveles aprobados");
-  xob.grade("", "Grado Maximo")
+  xob.grade("http://example.com/image.png", "Grado Maximo")
 ```
 
